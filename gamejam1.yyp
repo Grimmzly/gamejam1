@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "60723a76-7601-4536-9b61-2a0fbd83f213",
+            "Value": {
+                "id": "b8d1d16d-8f0f-4cda-b1d4-adcee1ac26fd",
+                "resourcePath": "sounds\\Sound_Boom\\Sound_Boom.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "60f9f268-9e15-475d-ba1b-a4fc659fb5d5",
             "Value": {
                 "id": "44cb4d7a-5a68-4ca4-98f9-ec5fca12a68e",
