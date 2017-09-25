@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "5e2e67ba-467c-4e4c-8ad7-9bc5b0b0bd33",
+            "Value": {
+                "id": "c52d5237-ca4a-447c-9dd4-fa8265811a70",
+                "resourcePath": "sounds\\Sound_FasterBoom\\Sound_FasterBoom.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "60723a76-7601-4536-9b61-2a0fbd83f213",
             "Value": {
                 "id": "b8d1d16d-8f0f-4cda-b1d4-adcee1ac26fd",
@@ -172,6 +180,14 @@
                 "id": "6023311c-b454-4379-bd4c-67fb72805ff9",
                 "resourcePath": "views\\c47efc61-dbff-41b0-836b-ff7ee3d14c71.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c8efc2a0-30f5-4609-8cca-9ff459bf4ee2",
+            "Value": {
+                "id": "8d7e7559-91c8-4136-b80b-05549b32d303",
+                "resourcePath": "sounds\\Sound_SlowerBoom\\Sound_SlowerBoom.yy",
+                "resourceType": "GMSound"
             }
         },
         {
