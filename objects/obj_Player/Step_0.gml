@@ -15,4 +15,9 @@ if(keyboard_check(vk_right)){x+=4;};
 if(keyboard_check(vk_down)){y+=4;};
 if(keyboard_check(vk_up)){y-=4;};
 
-if(mouse_x == clamp(mouse_x, bbox_left, bbox_right) && mouse_y == clamp(mouse_y, bbox_top, bbox_bottom)){audio_play_sound(Sound_Explosion,1,false);};
+if(mouse_x == clamp(mouse_x, bbox_left, bbox_right) && mouse_y == clamp(mouse_y, bbox_top, bbox_bottom)){
+	if !testBool {
+		audio_play_sound(Sound_OhMy,1,false);
+		testBool = true;
+	};
+}else{testBool = false;};

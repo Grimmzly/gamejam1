@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "b9d1072e-21f9-447f-9bc2-7ac537ecfb3c",
+            "Value": {
+                "id": "5c29910c-fcad-4703-a1b7-d51da96fd0b8",
+                "resourcePath": "sounds\\Sound_OhMy\\Sound_OhMy.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "c47efc61-dbff-41b0-836b-ff7ee3d14c71",
             "Value": {
                 "id": "6023311c-b454-4379-bd4c-67fb72805ff9",
