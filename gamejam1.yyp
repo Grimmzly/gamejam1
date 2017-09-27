@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "d18b02d4-eb77-4c12-896b-45d7b555f81d",
+            "Value": {
+                "id": "81d3b9bf-2a7b-46e9-8a16-e9a87d4fe3af",
+                "resourcePath": "sprites\\spr_ProtoTiles\\spr_ProtoTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d24f04f6-f879-45e3-b0e7-c0ca61c51e2b",
             "Value": {
                 "id": "6de044c9-0d66-4456-b3b8-57d76980e6ab",
@@ -267,6 +275,14 @@
             "Value": {
                 "id": "dc8b8b1b-3c86-4098-832b-79256936c162",
                 "resourcePath": "views\\f4e4cbeb-6a52-4ace-a2d2-14d4a8aa6671.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fd94f59e-5b0f-49f8-b8c1-aa102e2c14f6",
+            "Value": {
+                "id": "890ee315-0ffb-4395-95b6-0c4f4708de59",
+                "resourcePath": "views\\fd94f59e-5b0f-49f8-b8c1-aa102e2c14f6.yy",
                 "resourceType": "GMFolder"
             }
         },
