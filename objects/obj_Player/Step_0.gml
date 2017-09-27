@@ -10,10 +10,34 @@ if(keyboard_check_released(ord("4"))){testFunction(4);};
 if(keyboard_check_released(vk_numpad1)){testFunction(1);};
 
 
-if(keyboard_check(vk_left)){x-=4;};
-if(keyboard_check(vk_right)){x+=4;};
-if(keyboard_check(vk_down)){y+=4;};
-if(keyboard_check(vk_up)){y-=4;};
+if (keyboard_check(vk_left))
+	if (place_free(x-4,y)) x -=4;
+	else if !(place_free(x - 4,y))
+		{
+			while (place_free(x - 1,y)) x--;
+		}
+
+if (keyboard_check(vk_right))
+	if (place_free(x+4,y)) x +=4;
+	else if !(place_free(x + 4,y))
+		{
+			while (place_free(x + 1,y)) x++;
+		}
+
+if (keyboard_check(vk_up))
+	if (place_free(x,y-4)) y -=4;
+	else if !(place_free(x,y - 4))
+		{
+			while (place_free(x,y - 1)) y--;
+		}
+
+if (keyboard_check(vk_down))
+	if (place_free(x,y+4)) y +=4;
+	else if !(place_free(x,y + 4))
+		{
+			while (place_free(x,y + 1)) y++;
+		}
+
 
 if(mouse_x == clamp(mouse_x, bbox_left, bbox_right) && mouse_y == clamp(mouse_y, bbox_top, bbox_bottom)){
 	if !testBool {
