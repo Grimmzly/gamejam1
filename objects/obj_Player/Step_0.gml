@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(keyboard_check_released(vk_space)){audio_play_sound(Sound_Explosion,1,false);};
+if(keyboard_check_released(vk_space)){
+	audio_play_sound(Sound_Explosion,1,false);
+	
+};
 
 
 if(keyboard_check_released(ord("1"))){testFunction(1);};
@@ -21,3 +24,4 @@ if(mouse_x == clamp(mouse_x, bbox_left, bbox_right) && mouse_y == clamp(mouse_y,
 		testBool = true;
 	};
 }else{testBool = false;};
+

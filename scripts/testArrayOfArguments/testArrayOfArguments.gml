@@ -1,17 +1,9 @@
-for (i = 0; i < array_length_1d(arguments);i++){
-
-//Performs an operation with each of the arguments
 
 
-//Don't worry about this stuff, it isn't important unless you know what it's for.
-/*
-	switch (arguments[i]){
-		case 0:
-		case 1:
-		case 2:
-		default:
-		break;
-	};
-	
-*/
+
+
+//Perform an operation with each of the arguments
+for (i = 0; i < argument_count; i++){
+	//do stuff with arguments[i];
+	draw_text(i*50,50,argument[i]);
 };
