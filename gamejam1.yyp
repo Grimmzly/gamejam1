@@ -74,7 +74,7 @@
             "Key": "19ba1a8a-af60-46d3-88a0-82258f212313",
             "Value": {
                 "id": "7d268f33-60c6-4927-ab13-4c986de89a15",
-                "resourcePath": "tilesets\\tiles_\\tiles_.yy",
+                "resourcePath": "tilesets\\tiles_Prototype\\tiles_Prototype.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -116,6 +116,14 @@
                 "id": "5eae9035-8840-4c60-b076-6dd6b3e1f942",
                 "resourcePath": "views\\48cad47c-c620-4b95-a891-43d2520bff40.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4a256fc9-4220-4a98-9842-5fc828dd8b67",
+            "Value": {
+                "id": "fe0d91b4-4fb0-4894-80ee-22cbdafdf9f0",
+                "resourcePath": "sprites\\spr_RockTiles\\spr_RockTiles.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -180,14 +188,6 @@
                 "id": "5e43f470-1147-4ee7-891a-703c807e0bda",
                 "resourcePath": "views\\72588492-a288-44eb-901e-b1a0553204cc.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "7ddf8330-5c0f-478e-a7bc-c48b5da9e274",
-            "Value": {
-                "id": "44b6a96a-f23c-40bb-adf0-9b5de04e50b4",
-                "resourcePath": "sprites\\spr_t\\spr_t.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "e9b7f7af-4fde-464f-a5d6-dede22cabea7",
+            "Value": {
+                "id": "42fde618-98ed-4202-b22c-0c6b387bdd42",
+                "resourcePath": "tilesets\\tiles_RockTiles\\tiles_RockTiles.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "e9c228f4-33b1-47f6-a8ce-25f4531d99bc",
             "Value": {
                 "id": "4bf419cf-e7e6-4ad6-bd84-1922135cc058",
@@ -332,6 +340,14 @@
                 "id": "39b25691-5f11-4f45-89c4-88ca3c773cf6",
                 "resourcePath": "scripts\\testFunction\\testFunction.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f2aa5398-0cd7-4282-9ffd-8157578d98bb",
+            "Value": {
+                "id": "e615c942-b76f-4382-a957-869bf1c0b7b0",
+                "resourcePath": "rooms\\rm_spriteTest\\rm_spriteTest.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
