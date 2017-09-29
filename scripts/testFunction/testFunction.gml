@@ -13,7 +13,6 @@ switch(argument0){
 	case 4:
 	audio_play_sound(Sound_BigBalls,1,false);
 	break;
-	break;
 	default:
 	audio_play_sound(Sound_Explosion,1,false);
 };
