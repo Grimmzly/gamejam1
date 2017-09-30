@@ -3,14 +3,14 @@
     "modelName": "GMWindowsOptions",
     "mvc": "1.0",
     "name": "Windows",
-    "option_windows_allow_fullscreen_switching": false,
+    "option_windows_allow_fullscreen_switching": true,
     "option_windows_borderless": false,
-    "option_windows_company_info": "YoYo Games Ltd",
-    "option_windows_copyright_info": "(c) 2017 CompanyName",
-    "option_windows_description_info": "A GameMaker Studio 2 Game",
+    "option_windows_company_info": "Digital Souls Studio",
+    "option_windows_copyright_info": "(c) 2017 DigitalSoulStudios",
+    "option_windows_description_info": "I'm describing things, BITCH.",
     "option_windows_display_cursor": true,
-    "option_windows_display_name": "Made in GameMaker Studio 2",
-    "option_windows_enable_steam": false,
+    "option_windows_display_name": "Kumbaya, Motherfucker",
+    "option_windows_enable_steam": true,
     "option_windows_executable_name": "${project_name}",
     "option_windows_icon": "${base_options_dir}\\windows\\icons\\icon.ico",
     "option_windows_installer_finished": "${base_options_dir}\\windows\\installer\\finished.bmp",
@@ -18,10 +18,10 @@
     "option_windows_interpolate_pixels": false,
     "option_windows_license": "${base_options_dir}\\windows\\installer\\license.txt",
     "option_windows_nsis_file": "${base_options_dir}\\windows\\installer\\nsis_script.nsi",
-    "option_windows_product_info": "Made in GameMaker Studio 2",
+    "option_windows_product_info": "Gamejam 1 product",
     "option_windows_resize_window": false,
     "option_windows_save_location": 0,
-    "option_windows_scale": 0,
+    "option_windows_scale": 1,
     "option_windows_sleep_margin": 10,
     "option_windows_splash_screen": "${base_options_dir}\\windows\\splash\\splash.png",
     "option_windows_start_fullscreen": false,
@@ -29,9 +29,9 @@
     "option_windows_use_splash": false,
     "option_windows_version": {
         "build": 0,
-        "major": 1,
+        "major": 0,
         "minor": 0,
-        "revision": 0
+        "revision": 1
     },
-    "option_windows_vsync": false
+    "option_windows_vsync": true
 }

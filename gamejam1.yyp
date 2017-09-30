@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "2be8f23c-d829-451c-9165-153d0c0af852",
+            "Value": {
+                "id": "80edb805-7494-4a7d-9a61-5cf52d6988b3",
+                "resourcePath": "objects\\obj_Enemy\\obj_Enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "352dc84a-50ae-43fc-a224-87acea4aa58b",
             "Value": {
                 "id": "e659e1ff-955c-404a-b609-35d7c8ae2ade",
@@ -239,11 +247,27 @@
             }
         },
         {
+            "Key": "b6fe571a-df98-49fa-a33a-298bd9840fe2",
+            "Value": {
+                "id": "c688b04c-543d-4f76-8b01-46f715fccf70",
+                "resourcePath": "objects\\obj_SteamController\\obj_SteamController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b9d1072e-21f9-447f-9bc2-7ac537ecfb3c",
             "Value": {
                 "id": "5c29910c-fcad-4703-a1b7-d51da96fd0b8",
                 "resourcePath": "sounds\\Sound_OhMy\\Sound_OhMy.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "c2b6ed36-38b5-4f0c-9c82-12a69ce9b9dd",
+            "Value": {
+                "id": "cbba7b5d-adab-4657-91f0-5df4d4170b1b",
+                "resourcePath": "sprites\\spr_Enemy\\spr_Enemy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

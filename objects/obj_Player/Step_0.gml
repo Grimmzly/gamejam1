@@ -1,10 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
+// Trashio Codio
+//if (place_meeting(x,y,obj_Enemy)) room_restart();
+///////////////////////////////
+event_inherited();
 if(keyboard_check_released(vk_space)){
 	audio_play_sound(Sound_Explosion,1,false);
 	
 };
-
 
 if(keyboard_check_released(ord("1"))){testFunction(1);};
 if(keyboard_check_released(ord("2"))){testFunction(2);};
@@ -13,6 +16,47 @@ if(keyboard_check_released(ord("4"))){testFunction(4);};
 if(keyboard_check_released(vk_numpad1)){testFunction(1);};
 
 
+
+//This is where the new controls will go
+
+
+if (keyboard_check(vk_left) && !keyboard_check(vk_right)){
+	//move the character left
+	
+}
+if (keyboard_check(vk_right) && !keyboard_check(vk_left)){
+	//move the character right
+	
+}
+
+//Alternate controls for WASD
+if (keyboard_check(ord("D")) && !keyboard_check(ord("A"))){
+	//move the character right
+	isWalkingRight = true;
+	//myAccel[0] = 2;
+} else isWalkingRight = false;
+if (keyboard_check(ord("A")) && !keyboard_check(ord("D"))){
+	//move the character left
+	isWalkingLeft = true;
+	//myAccel[0] = -2;
+} else isWalkingLeft = false;
+if (keyboard_check(ord("W")) && !keyboard_check(ord("S"))){
+	//move the character up
+	isJumping = true;
+};
+if (keyboard_check_released(ord("W")) && isJumping){
+	isJumping = false;
+};
+if (keyboard_check(ord("S")) && !keyboard_check(ord("W"))){
+	//move the character down
+	//Not used yet
+};
+
+
+
+
+//This is our starting movement control scheme
+/*
 if (keyboard_check(vk_left))
 	if (place_free(x-4,y)) x -=4;
 	else if !(place_free(x - 4,y))
@@ -40,7 +84,7 @@ if (keyboard_check(vk_down))
 		{
 			while (place_free(x,y + 1)) y++;
 		}
-
+*/
 
 if(mouse_x == clamp(mouse_x, bbox_left, bbox_right) && mouse_y == clamp(mouse_y, bbox_top, bbox_bottom)){
 	if !testBool {
