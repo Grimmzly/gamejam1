@@ -19,7 +19,9 @@ if(isActive){
 	else {myAccel[0] = 0;};
 
 	//Throttling speed
-	//x = clamp(myPos[0],-20,20);
+	clamp(mySpeed[0],-maxSpeed[0],maxSpeed[0]);
+	clamp(mySpeed[1],-maxSpeed[1],maxSpeed[1]);
+	
 	if (mySpeed[0] < maxSpeed[0] && mySpeed[0] > -maxSpeed[0]) {
 		mySpeed[0] += myAccel[0];
 	};
@@ -27,12 +29,13 @@ if(isActive){
 		mySpeed[1] += myAccel[1];
 	};
 
-	//Keeping the throttled speed within the parameters
-	if mySpeed[0] > maxSpeed[0] mySpeed[0] = maxSpeed[0];
-	if mySpeed[0] < -maxSpeed[0] mySpeed[0] = -maxSpeed[0];
-	if mySpeed[1] > maxSpeed[1] mySpeed[1] = maxSpeed[1];
-	if mySpeed[1] < -maxSpeed[1] mySpeed[1] = -maxSpeed[1];
+	////Keeping the throttled speed within the parameters
+	//if mySpeed[0] > maxSpeed[0] mySpeed[0] = maxSpeed[0];
+	//if mySpeed[0] < -maxSpeed[0] mySpeed[0] = -maxSpeed[0];
+	//if mySpeed[1] > maxSpeed[1] mySpeed[1] = maxSpeed[1];
+	//if mySpeed[1] < -maxSpeed[1] mySpeed[1] = -maxSpeed[1];
 
+	//Friction slows the character naturally
 	if (!isWalkingRight && !isWalkingLeft && isOnGround) mySpeed[0] *= 0.65;
 
 	//Set the new Position

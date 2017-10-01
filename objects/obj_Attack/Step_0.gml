@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-i++;
-if (i > 45){
+if (get_timer() - i > 660000){
 	instance_destroy();
 	obj_Player.isInvincible=false;
 };
