@@ -3,3 +3,4 @@
 event_inherited();
 isWalkingLeft = true;
 maxSpeed[0] = 5;
+isActive = true;

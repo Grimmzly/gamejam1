@@ -4,7 +4,8 @@ testBool = false;
 draw_set_colour(c_white);
 
 //This is where we initialise all local variables for entities that exist in the game
-myHealth = 1;					//Health - how much damage it can take
+isActive = false;							//Default to false to avoid running background objects
+myHealth = 1;								//Health - how much damage it can take
 if(x && y){
 	myPos = [x,y];							//Position - Where it is on the map
 	myLastPos = [x,y];						//Last Position - Where it was last frame
