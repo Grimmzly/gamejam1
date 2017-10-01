@@ -4,3 +4,4 @@ event_inherited();
 if(!place_free(x,y)) {isWalkingRight = false; isWalkingLeft = true;}
 if(!place_free(x,y)) {isWalkingRight = true; isWalkingLeft = false;}
 else {isWalkingLeft = true; isWalkingRight = false;};
+if(place_meeting(x,y,obj_Attack)){myHealth--;};

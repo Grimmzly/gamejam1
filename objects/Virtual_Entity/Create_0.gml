@@ -19,3 +19,4 @@ myWidth = sprite_width;						//Width of the sprite (or bounding box)
 myHeight = sprite_height;					//Height of the sprite (or bounding box)
 isWalkingLeft = false;						//Some logic for walking
 isWalkingRight = false;						//""				""
+isInvincible = false;						//This is for modders, and specific sections of code

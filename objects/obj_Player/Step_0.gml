@@ -6,7 +6,8 @@
 event_inherited();
 if(keyboard_check_released(vk_space)){
 	audio_play_sound(Sound_Explosion,1,false);
-	
+	instance_create_depth(myPos[0],myPos[1],depth,obj_Attack);
+	isInvincible = true;
 };
 
 if(keyboard_check_released(ord("1"))){testFunction(1);};
@@ -53,6 +54,13 @@ if (keyboard_check(ord("S")) && !keyboard_check(ord("W"))){
 };
 
 
+//If you hit an enemy, react here
+if(!isInvincible && place_meeting(myPos[0],myPos[1],obj_Enemy)) {
+	myHealth--;
+	myPos = myLastPos;
+	mySpeed[0] = -mySpeed[0];
+	mySpeed[1] = -mySpeed[1];
+};
 
 
 //This is our starting movement control scheme
