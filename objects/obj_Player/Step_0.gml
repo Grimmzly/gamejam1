@@ -1,4 +1,4 @@
-/// @description Insert description here
+// @description Insert description here
 // You can write your code in this editor
 // Trashio Codio
 //if (place_meeting(x,y,obj_Enemy)) room_restart();
