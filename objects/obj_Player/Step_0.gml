@@ -1,3 +1,6 @@
+
+tile_get_index()
+
 /// @description Insert description here
 // You can write your code in this editor
 // Trashio Codio

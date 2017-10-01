@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "1542614d-fe99-4624-be2b-59254d6ae9f4",
+            "Value": {
+                "id": "9ab55c59-d627-4415-8073-e984f6e364c8",
+                "resourcePath": "scripts\\COLLISIONSCRIPTMATTHEW\\COLLISIONSCRIPTMATTHEW.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "15dd68b6-eddb-4277-b4a8-fef1caabf3f3",
             "Value": {
                 "id": "f30ff75e-2bd4-47ca-a4ce-0cf8cc5eb863",
@@ -215,6 +223,22 @@
             }
         },
         {
+            "Key": "8e47b8c0-f2d1-4bd4-8e59-e36195d92ae5",
+            "Value": {
+                "id": "f9bc4e0d-7666-46b1-abf8-019eef593548",
+                "resourcePath": "objects\\object7\\object7.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "97a61157-e810-4ffd-b29d-6196227982e8",
+            "Value": {
+                "id": "a74de7b3-cd88-473a-930a-9bb30fe41af1",
+                "resourcePath": "sprites\\sprite6\\sprite6.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a4696da2-96af-4ac2-93d3-14a749269a0b",
             "Value": {
                 "id": "b4474381-8467-45d7-b64c-6cdbbef61cd3",
@@ -343,6 +367,14 @@
             }
         },
         {
+            "Key": "e4b67256-f9f6-49d8-8175-52590be3be07",
+            "Value": {
+                "id": "52e73b61-860c-499c-b2eb-bd6f50d1bcd9",
+                "resourcePath": "sprites\\sprite5\\sprite5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e9b7f7af-4fde-464f-a5d6-dede22cabea7",
             "Value": {
                 "id": "42fde618-98ed-4202-b22c-0c6b387bdd42",
@@ -409,7 +441,8 @@
     ],
     "script_order": [
         "ea998905-fe13-4630-b4df-923718f5d505",
-        "db158c7e-4b68-4f32-a7e0-3e88c979e29f"
+        "db158c7e-4b68-4f32-a7e0-3e88c979e29f",
+        "1542614d-fe99-4624-be2b-59254d6ae9f4"
     ],
     "tutorial": ""
 }
