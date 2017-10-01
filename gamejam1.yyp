@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "c57d2503-208f-4ef2-9755-dc8b92d7148b",
+            "Value": {
+                "id": "b8acb515-d7f1-4ca0-bacd-88f1e7f06ba0",
+                "resourcePath": "scripts\\FUCKYOUSOURCECONTROL\\FUCKYOUSOURCECONTROL.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c8efc2a0-30f5-4609-8cca-9ff459bf4ee2",
             "Value": {
                 "id": "8d7e7559-91c8-4136-b80b-05549b32d303",
@@ -457,7 +465,8 @@
     ],
     "script_order": [
         "ea998905-fe13-4630-b4df-923718f5d505",
-        "db158c7e-4b68-4f32-a7e0-3e88c979e29f"
+        "db158c7e-4b68-4f32-a7e0-3e88c979e29f",
+        "c57d2503-208f-4ef2-9755-dc8b92d7148b"
     ],
     "tutorial": ""
 }
