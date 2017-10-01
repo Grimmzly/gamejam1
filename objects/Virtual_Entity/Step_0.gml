@@ -39,16 +39,6 @@ if(isActive){
 	myPos[0] += mySpeed[0];
 	myPos[1] += mySpeed[1];
 
-
-	//If you hit an enemy, react here
-	if(place_meeting(myPos[0],myPos[1],obj_Enemy)) {
-		myHealth--;
-		myPos = myLastPos;
-		mySpeed[0] = -mySpeed[0];
-		mySpeed[1] = -mySpeed[1];
-	};
-	
-	
 	
 	//This collision system is horrible
 	if (myPos != myLastPos){
