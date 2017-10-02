@@ -4,10 +4,10 @@
     "mvc": "1.1",
     "name": "4be036aa-adb2-40c9-b263-481a3938a8b9",
     "children": [
-        "a6b07681-98c4-496e-8f17-9dcc0dc1ac55",
-        "bbe36c39-fd4e-4a5b-87a6-b995f397495f",
         "0a56c8ec-e077-427b-95d1-c8f17a26a77d",
-        "8a997bdf-3d86-4a81-a503-26e18c315d3f"
+        "25eff247-2221-40fa-8ab2-1550e47dfdb2",
+        "61666a3d-6d99-4fc5-8c1b-a6fafc04a4dc",
+        "a6e3f3dc-bc66-446d-b7fe-c6e531897ecd"
     ],
     "filterType": "GMScript",
     "folderName": "resolution",

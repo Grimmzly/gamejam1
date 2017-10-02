@@ -1,5 +1,5 @@
 {
-    "id": "bbe36c39-fd4e-4a5b-87a6-b995f397495f",
+    "id": "25eff247-2221-40fa-8ab2-1550e47dfdb2",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "resolution_switch",
