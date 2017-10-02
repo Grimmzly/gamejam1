@@ -1,7 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (keyboard_check_pressed(ord("F"))) 
-{
-resolution_switch();
-}
-
+draw_sprite(spr_badCrate,crateType,x,y);
