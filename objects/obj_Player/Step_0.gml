@@ -3,6 +3,7 @@
 // Trashio Codio
 //if (place_meeting(x,y,obj_Enemy)) room_restart();
 ///////////////////////////////
+startFrameTime = get_timer();
 event_inherited();
 if(keyboard_check_pressed(vk_space)){
 	audio_play_sound(Sound_Explosion,1,false);
@@ -53,10 +54,21 @@ if (keyboard_check(ord("S")) && !keyboard_check(ord("W"))){
 	//Not used yet
 };
 
+if (isInvincible){
+	if(myInvincibleTimer = 0){
+		myInvincibleTimer = get_timer();
+	};
+	if((startFrameTime - myInvincibleTimer) > 750000){
+		isInvincible = false;
+		myInvincibleTimer = 0;
+	};
+};
 
 //If you hit an enemy, react here
+if (place_meeting(myPos[0],myPos[1],obj_badCrate)){mySpeed[1] *= -1; isInvincible = true;}
 if(!isInvincible && place_meeting(myPos[0],myPos[1],obj_Enemy)) {
 	myHealth--;
+	isInvincible = true;
 	myPos = myLastPos;
 	mySpeed[0] = -mySpeed[0];
 	mySpeed[1] = -mySpeed[1];

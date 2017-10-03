@@ -28,7 +28,8 @@ if(isActive){
 	//Set the new Position
 	myPos[0] += mySpeed[0];
 	myPos[1] += mySpeed[1];
-
+	
+	
 	//This collision system is horrible
 	if (myPos != myLastPos){
 		if (!place_free(myPos[0],myPos[1])){
@@ -79,7 +80,38 @@ if(isActive){
 				};
 			};
 		};
+	};//End of sloppy collisions
+	
+	/*
+	if (place_meeting(myPos[0],myPos[1],obj_Solid)){
+		tempXDis = obj_Solid.sprite_width/2 + sprite_width/2;
+		tempYDis = obj_Solid.sprite_width/2 + sprite_height/2;
+		overlapX = myPos[0] - obj_Solid.x;
+		overlapY = myPos[1] - obj_Solid.y;
+		myDisp = [myPos[0] - myLastPos[0],myPos[1] - myLastPos[1]];
+		
+		if (myDisp[0] > 0){
+			//This means the object is to the right of the entity
+			//do stuff
+			tempXDis *= -1;
+		};
+		if (myDisp[1] > 0){
+			//This means the object is below the entity
+			//do stuff
+			tempXDis *= -1;
+		};
+		if (!place_meeting(myPos[0],myLastPos[1],obj_Solid)&& obj_Solid.y > y){
+			isOnGound=true;
+		};
+		if (abs(overlapX) > abs(overlapY)){
+			//The collision is mostly vertical
+			myPos[1] = obj_Solid.y + tempYDis;
+		}else{
+			myPos[0] = obj_Solid.x + tempXDis;
+		};
+		
 	};
+	*/
 	//Finally, update the character's x and y positions
 	x = myPos[0];
 	y = myPos[1];
