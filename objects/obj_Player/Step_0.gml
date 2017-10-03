@@ -4,7 +4,7 @@
 //if (place_meeting(x,y,obj_Enemy)) room_restart();
 ///////////////////////////////
 event_inherited();
-if(keyboard_check_released(vk_space)){
+if(keyboard_check_pressed(vk_space)){
 	audio_play_sound(Sound_Explosion,1,false);
 	instance_create_depth(myPos[0],myPos[1],depth,obj_Attack);
 	isInvincible = true;
