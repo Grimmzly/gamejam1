@@ -9,7 +9,7 @@ with (obj_badCrate)
 			break;
 		
 		case 1:
-/	instance_create_layer(x,y,"player_layer_D0", ds_list_find_value(crate_inventory.ds_crate1,irandom(ds_list_size(crate_inventory.ds_crate1))))
+//	instance_create_layer(x,y,"player_layer_D0", ds_list_find_value(crate_inventory.ds_crate1,irandom(ds_list_size(crate_inventory.ds_crate1))))
 			break;
 	}
 }
