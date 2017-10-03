@@ -19,22 +19,9 @@ if(isActive){
 	else {myAccel[0] = 0;};
 
 	//Throttling speed
-	clamp(mySpeed[0],-maxSpeed[0],maxSpeed[0]);
-	clamp(mySpeed[1],-maxSpeed[1],maxSpeed[1]);
+	mySpeed[0] = clamp(mySpeed[0]+ myAccel[0], -maxSpeed[0], maxSpeed[0]);
+	mySpeed[1] = clamp(mySpeed[1]+ myAccel[1], -maxSpeed[1], maxSpeed[1]);
 	
-	if (mySpeed[0] < maxSpeed[0] && mySpeed[0] > -maxSpeed[0]) {
-		mySpeed[0] += myAccel[0];
-	};
-	if (mySpeed[1] < maxSpeed[1] && mySpeed[1] > -maxSpeed[1]) {
-		mySpeed[1] += myAccel[1];
-	};
-
-	////Keeping the throttled speed within the parameters
-	//if mySpeed[0] > maxSpeed[0] mySpeed[0] = maxSpeed[0];
-	//if mySpeed[0] < -maxSpeed[0] mySpeed[0] = -maxSpeed[0];
-	//if mySpeed[1] > maxSpeed[1] mySpeed[1] = maxSpeed[1];
-	//if mySpeed[1] < -maxSpeed[1] mySpeed[1] = -maxSpeed[1];
-
 	//Friction slows the character naturally
 	if (!isWalkingRight && !isWalkingLeft && isOnGround) mySpeed[0] *= 0.65;
 
@@ -42,42 +29,52 @@ if(isActive){
 	myPos[0] += mySpeed[0];
 	myPos[1] += mySpeed[1];
 
-	
 	//This collision system is horrible
 	if (myPos != myLastPos){
 		if (!place_free(myPos[0],myPos[1])){
+		
+			//Initialise the local variables
+			yCollision = true;
+			xCollision = true;
 			//Find out where you came from
-			displacement = [myPos[0] - myLastPos[0],myPos[1] - myLastPos[1]];
-	
-	
+			displacement = [myPos[0] - myLastPos[0], myPos[1] - myLastPos[1]];
+			absDisp = [abs(displacement[0]), abs(displacement[1])];
+			xMod = floor(displacement[0]/absDisp[0])
+			yMod = floor(displacement[1]/absDisp[1]);
+			
+			
+			//All this is sloppy as fuck. I need it gone.//////////////////
 			//Check to see if moving back towards the previous position on the x axis still collides
 			if (place_free(myPos[0] - displacement[0],myPos[1])){
-				xCollision = true;
+				yCollision = false;
 				mySpeed[0] = 0;
-			}else xCollision = false;
-		
+			};		
 			//Check to see if moving back towards the previous position on the y axis still collides
 			if (place_free(myPos[0],myPos[1] - displacement[1])){
-				yCollision = true;
+				xCollision = false;
 				mySpeed[1] = 0;
 				//Check to see if you hit the ground or not
-				if (place_free(myPos[0],myPos[1] - abs(displacement[1]))){
+				if (place_free(myPos[0],myPos[1] - absDisp[1])){
 					isOnGround = true;
 				};
-			}else yCollision = false;
-		
+			};
+			////////////////////////////////////////////////////////////////
+			
 			//Enter a loop
 			while (!place_free(myPos[0],myPos[1])){
 				//Move out of the collision 1 pixel at a time. God, this is horrible
-				if (xCollision){
-					myPos[0] -= floor(displacement[0]/abs(displacement[0]));
+				if (yCollision && !xCollision){
+					myPos[1] -= yMod;
 				};
-				if (yCollision){
-					myPos[1] -= floor(displacement[1]/abs(displacement[1]));
+				else if (xCollision && !yCollision){
+					myPos[0] -= xMod;
 				};
-				if (!yCollision && !xCollision){
-					if place_free(myLastPos[0],myLastPos[1]){
-						myPos = myLastPos;
+				else{
+					myPos = myLastPos;
+					mySpeed = [0,0];
+					while place_free(myPos[0]+xMod,myPos[1]+yMod){
+						myPos[0] += xMod;
+						myPos[1] += yMod;
 					};
 				};
 			};
