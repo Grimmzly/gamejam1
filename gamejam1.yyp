@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "02d1cc7c-7b15-4631-b15d-858d91b6a42e",
+            "Value": {
+                "id": "a11551e0-de60-4e98-b980-de93761e94a7",
+                "resourcePath": "scripts\\crate_inventory\\crate_inventory.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0a56c8ec-e077-427b-95d1-c8f17a26a77d",
             "Value": {
                 "id": "d8c67644-15f6-4cc8-9580-a9768f6b8f9f",
@@ -471,6 +479,14 @@
             }
         },
         {
+            "Key": "cf81268b-3ff5-4aab-be6d-fc49b0f99569",
+            "Value": {
+                "id": "cc041198-cd6f-465c-903c-0d24a2527709",
+                "resourcePath": "views\\cf81268b-3ff5-4aab-be6d-fc49b0f99569.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d012370a-a3f0-4b81-8f50-ddd3e64fdf38",
             "Value": {
                 "id": "385e245d-bf34-44a9-ba7e-27df0519592f",
@@ -524,6 +540,14 @@
                 "id": "7b5f9ec8-738e-48ad-a99e-3f8e3038136d",
                 "resourcePath": "sounds\\Sound_Explosion\\Sound_Explosion.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "e3596ca6-e9e7-46ad-ac71-2d195137061e",
+            "Value": {
+                "id": "08cec407-a591-4e3b-aca6-5ff94a386c3f",
+                "resourcePath": "scripts\\crate_drop_object\\crate_drop_object.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -632,10 +656,12 @@
         "61666a3d-6d99-4fc5-8c1b-a6fafc04a4dc",
         "a6e3f3dc-bc66-446d-b7fe-c6e531897ecd",
         "41c04613-f131-4028-94f6-c455763bd012",
-        "b0f6b1fa-675c-4c64-882e-ac737636519b",
         "f40baba2-d509-4496-a9ab-1432c10f89c0",
         "b479ecd9-c5e4-43f0-82a8-1115932c9d1b",
-        "4cf59d6a-01b5-46e9-87cf-6171f3147eaa"
+        "b0f6b1fa-675c-4c64-882e-ac737636519b",
+        "4cf59d6a-01b5-46e9-87cf-6171f3147eaa",
+        "e3596ca6-e9e7-46ad-ac71-2d195137061e",
+        "02d1cc7c-7b15-4631-b15d-858d91b6a42e"
     ],
     "tutorial": ""
 }
