@@ -8,8 +8,9 @@ event_inherited();
 if(keyboard_check_pressed(vk_space)){
 	audio_play_sound(Sound_Explosion,1,false);
 	instance_create_depth(myPos[0],myPos[1],depth,obj_Attack);
-	isInvincible = true;
+	isAttacking = true;
 };
+if (isAttacking){isInvincible = true;myInvincibleTimer = 0;}
 
 if(keyboard_check_released(ord("1"))){testFunction(1);};
 if(keyboard_check_released(ord("2"))){testFunction(2);};
@@ -25,11 +26,11 @@ if(keyboard_check_released(vk_numpad1)){testFunction(1);};
 if (keyboard_check(vk_left) && !keyboard_check(vk_right)){
 	//move the character left
 	
-}
+};
 if (keyboard_check(vk_right) && !keyboard_check(vk_left)){
 	//move the character right
 	
-}
+};
 
 //Alternate controls for WASD
 if (keyboard_check(ord("D")) && !keyboard_check(ord("A"))){
