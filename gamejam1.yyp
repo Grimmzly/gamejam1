@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "6902ae41-aef2-45ef-a68e-9b657e496390",
+            "Value": {
+                "id": "ece3d71a-46f3-46dc-a8a7-b7f261edb41b",
+                "resourcePath": "sprites\\spr_Bomb\\spr_Bomb.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6dc402c2-6060-4f43-b223-5d311350eb33",
             "Value": {
                 "id": "ee56b831-572b-41c0-bcad-27807f4b18d0",
@@ -343,11 +351,11 @@
             }
         },
         {
-            "Key": "82f55d8f-500c-4dae-9a95-8af61292c63d",
+            "Key": "825debea-0758-4c23-b49a-c0b3d8e48f8c",
             "Value": {
-                "id": "4fcac574-53f8-4fdf-a192-f1e403283fe6",
-                "resourcePath": "objects\\obj_EnemyGhost\\obj_EnemyGhost.yy",
-                "resourceType": "GMObject"
+                "id": "c51d40f3-cd26-4e82-9d81-998165cf0435",
+                "resourcePath": "views\\825debea-0758-4c23-b49a-c0b3d8e48f8c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -372,14 +380,6 @@
                 "id": "17c3d7a8-a49c-4683-bc75-510024ab0b51",
                 "resourcePath": "fonts\\fnt_main\\fnt_main.yy",
                 "resourceType": "GMFont"
-            }
-        },
-        {
-            "Key": "9d36d99f-52b7-4cd2-b916-2d36306a5b3b",
-            "Value": {
-                "id": "78395847-2e1f-4704-b3be-7daf5f3e1987",
-                "resourcePath": "sprites\\sprite7\\sprite7.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -420,6 +420,22 @@
                 "id": "22e421eb-f590-4d78-aba3-a12cacfaa9ad",
                 "resourcePath": "notes\\compatibility_report_021017_1734183418.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "aa953db4-49fd-4e47-9124-50bcfcd1ddd0",
+            "Value": {
+                "id": "738d49fe-6bc9-4ec4-af0f-d55925d4292c",
+                "resourcePath": "objects\\HUD_Controller_match\\HUD_Controller_match.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "abb26e08-e388-4b08-bff3-8116ce6c8db1",
+            "Value": {
+                "id": "29ef8abc-de13-4bba-aa70-bf79e440b67f",
+                "resourcePath": "views\\abb26e08-e388-4b08-bff3-8116ce6c8db1.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -468,6 +484,14 @@
                 "id": "5c29910c-fcad-4703-a1b7-d51da96fd0b8",
                 "resourcePath": "sounds\\Sound_OhMy\\Sound_OhMy.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "c0c1d07d-dcf9-452d-abd5-bfad9bf24a0e",
+            "Value": {
+                "id": "3b45e6c8-ebcd-4c0c-9495-dc8ee304e908",
+                "resourcePath": "views\\c0c1d07d-dcf9-452d-abd5-bfad9bf24a0e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -671,11 +695,35 @@
             }
         },
         {
+            "Key": "f4cd6ae9-d673-492b-8591-cc7e77456431",
+            "Value": {
+                "id": "c61a2efd-e27e-45bd-8978-6e341a14545e",
+                "resourcePath": "views\\f4cd6ae9-d673-492b-8591-cc7e77456431.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f4e4cbeb-6a52-4ace-a2d2-14d4a8aa6671",
             "Value": {
                 "id": "dc8b8b1b-3c86-4098-832b-79256936c162",
                 "resourcePath": "views\\f4e4cbeb-6a52-4ace-a2d2-14d4a8aa6671.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f5251181-7434-40db-9670-ae263cbee5c4",
+            "Value": {
+                "id": "9b6227ce-69b6-4856-a034-5316f6e51674",
+                "resourcePath": "views\\f5251181-7434-40db-9670-ae263cbee5c4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fd01b18f-1794-4965-8178-7513bfd22029",
+            "Value": {
+                "id": "4e4aa665-c4fb-4e4c-91b3-0947f97e3164",
+                "resourcePath": "objects\\obj_Bomb\\obj_Bomb.yy",
+                "resourceType": "GMObject"
             }
         },
         {

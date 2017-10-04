@@ -11,8 +11,8 @@ ds_crate1 = ds_list_create();
 ds_crate2 = ds_list_create();
 
 //Data Structure inventory setup
-ds_list_add(ds_crate0, obj_Enemy);
-ds_list_add(ds_crate1, obj_Enemy);
+ds_list_add(ds_crate0, obj_Bomb);
+ds_list_add(ds_crate1, obj_Bomb);
 
 switch argument0
 {
