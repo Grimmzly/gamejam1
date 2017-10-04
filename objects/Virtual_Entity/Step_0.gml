@@ -11,7 +11,7 @@ if(isActive){
 	myLastPos[1] = myPos[1];
 
 	//Check to see if you're jumping
-	if (isOnGround && isJumping) { mySpeed[1] = -20; isOnGround = false;};
+	if (isOnGround && isJumping) { mySpeed[1] = myJumpSpeed; isOnGround = false;};
 
 	//Check to see if you're walking
 	if (isWalkingRight && !isWalkingLeft) {myAccel[0] = 1;};
