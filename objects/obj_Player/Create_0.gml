@@ -5,3 +5,4 @@ isActive = true;
 myHealth = 3;
 myInvincibleTimer = 0;
 startFrameTime = get_timer();
+myAttackCooldown = 1000000;					//My attack rate is one attack per second

@@ -5,7 +5,7 @@
 ///////////////////////////////
 startFrameTime = get_timer();
 event_inherited();
-if(keyboard_check_pressed(vk_space)){
+if(!isAttacking && keyboard_check_pressed(vk_space)){
 	audio_play_sound(Sound_Explosion,1,false);
 	instance_create_depth(myPos[0],myPos[1],depth,obj_Attack);
 	isAttacking = true;
@@ -67,7 +67,8 @@ if (isInvincible){
 
 //If you hit an enemy, react here
 if (place_meeting(myPos[0],myPos[1],obj_badCrate)){mySpeed[1] *= -1; isInvincible = true;}
-if(!isInvincible && place_meeting(myPos[0],myPos[1],obj_Enemy)) {
+
+if(!isInvincible && place_meeting(myPos[0],myPos[1],Virtual_Enemy)) {
 	myHealth--;
 	isInvincible = true;
 	myPos = myLastPos;
@@ -108,9 +109,8 @@ if (keyboard_check(vk_down))
 */
 
 if(mouse_x == clamp(mouse_x, bbox_left, bbox_right) && mouse_y == clamp(mouse_y, bbox_top, bbox_bottom)){
-	if !testBool {
+	if mouse_check_button_pressed(mb_left) {
 		audio_play_sound(Sound_OhMy,1,false);
-		testBool = true;
 	};
-}else{testBool = false;};
+};
 

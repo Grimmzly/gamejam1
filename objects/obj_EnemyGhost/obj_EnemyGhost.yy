@@ -1,42 +1,32 @@
 {
-    "id": "2be8f23c-d829-451c-9165-153d0c0af852",
+    "id": "82f55d8f-500c-4dae-9a95-8af61292c63d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_Enemy",
+    "name": "obj_EnemyGhost",
     "eventList": [
         {
-            "id": "92baedc6-f0f6-47dd-9e21-2558c3dd3859",
+            "id": "2b9d579a-bcc1-4000-96ad-719ea6c1f97f",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "2be8f23c-d829-451c-9165-153d0c0af852"
+            "m_owner": "82f55d8f-500c-4dae-9a95-8af61292c63d"
         },
         {
-            "id": "f8ddeb61-3810-46a3-817e-48c66947654c",
+            "id": "0e111238-8600-4d78-9187-7f75cbe09404",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "2be8f23c-d829-451c-9165-153d0c0af852"
-        },
-        {
-            "id": "788469c8-3dc7-4cee-8f5d-30076e9b2034",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 1,
-            "m_owner": "2be8f23c-d829-451c-9165-153d0c0af852"
+            "m_owner": "82f55d8f-500c-4dae-9a95-8af61292c63d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "parentObjectId": "5d2e4b93-b365-4cc9-96cc-0c4255593d6d",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -51,6 +41,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "c2b6ed36-38b5-4f0c-9c82-12a69ce9b9dd",
+    "spriteId": "cf7a57e7-c74b-400b-934b-1119268a4e50",
     "visible": true
 }

@@ -23,14 +23,14 @@ if(isActive){
 	mySpeed[1] = clamp(mySpeed[1]+ myAccel[1], -maxSpeed[1], maxSpeed[1]);
 	
 	//Friction slows the character naturally
-	if (!isWalkingRight && !isWalkingLeft && isOnGround) mySpeed[0] *= 0.65;
+	if (!isWalkingRight && !isWalkingLeft && isOnGround) mySpeed[0] *= 0.69;
 
 	//Set the new Position
 	myPos[0] += mySpeed[0];
 	myPos[1] += mySpeed[1];
 	
 	
-	//This collision system is horrible
+	//This collision system is horrible, but works
 	if (myPos != myLastPos){
 		if (!place_free(myPos[0],myPos[1])){
 		
@@ -44,7 +44,7 @@ if(isActive){
 			yMod = floor(displacement[1]/absDisp[1]);
 			
 			
-			//All this is sloppy as fuck. I need it gone.//////////////////
+			//All this is sloppy as fuck. I need it cleaner.//////////////////
 			//Check to see if moving back towards the previous position on the x axis still collides
 			if (place_free(myPos[0] - displacement[0],myPos[1])){
 				yCollision = false;
