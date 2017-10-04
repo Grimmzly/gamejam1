@@ -4,3 +4,4 @@ event_inherited();
 jumpTimer = 2500000;
 timeFrame = get_timer();
 isActive = true;
+maxSpeed[0] = 50;
