@@ -5,3 +5,4 @@ if (keyboard_check_pressed(ord("F")))
 resolution_switch();
 }
 
+debug_Runtime++;
