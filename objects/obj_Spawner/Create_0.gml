@@ -3,4 +3,4 @@
 maxSpawnables = 10;
 spawnRate = 5000;
 lastSpawnTime = get_timer();
-instance_create_depth(x,y,depth,obj_GhostEnemy);
+spawnType = obj_GhostEnemy;
