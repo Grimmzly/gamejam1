@@ -15,5 +15,5 @@ draw_text(30,80,
 	"True frame rate: " + string(fps_real) + "\n" +
 	"Total instances: " + string(instance_count) + "\n" +
 	"Total ghosts: " + string(instance_number(obj_GhostEnemy)) + "\n" +
-	"Total runtime: " + string(debug_Runtime)
+	"Total runtime: " + string(floor(debug_Runtime/fps))
 	);
