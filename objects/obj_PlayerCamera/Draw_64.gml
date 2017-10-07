@@ -15,8 +15,12 @@ draw_text(30,80,
 	"True frame rate: " + string(fps_real) + "\n" +
 	"Total instances: " + string(instance_count) + "\n" +
 	"Total ghosts: " + string(instance_number(obj_GhostEnemy)) + "\n" +
-	"Total runtime: " + string(floor(debug_Runtime/fps)) + "\n" +
+	"Total runtime: " + string(floor(debug_Runtime/fps)) + "\n" 
+	);
+
+if (instance_exists(obj_Hopper)) {
+	draw_text(60,80,
 	"Hopper frame: " + string(floor(obj_Hopper.image_index)) + "\n" +
 	"Hopper Anim: " + sprite_get_name(obj_Hopper)
-	
-	);
+	)
+}
