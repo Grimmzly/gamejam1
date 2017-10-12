@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "26a276cd-7be1-40f8-a459-7fafda8ab2c2",
+            "Value": {
+                "id": "99b05adf-a2fc-41f7-9722-e4641ac8ce5a",
+                "resourcePath": "sprites\\spr_PlayerIdle\\spr_PlayerIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "26f77a20-adcd-453e-b26d-491a77d04636",
             "Value": {
                 "id": "41adef1d-752c-45fe-95fb-2db237acb5aa",
@@ -163,6 +171,14 @@
             "Value": {
                 "id": "362bb819-c20b-45d7-9eaf-5b683433f285",
                 "resourcePath": "sprites\\spr_DeadEnemy\\spr_DeadEnemy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2eb39816-b7bf-48f7-8d59-a249e4c9d821",
+            "Value": {
+                "id": "29493417-9a5e-4499-b4e5-6054038df7cb",
+                "resourcePath": "sprites\\spr_GhostPlayer\\spr_GhostPlayer.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -268,6 +284,14 @@
                 "id": "4aed0b19-b386-4f24-a973-31edc139f3b6",
                 "resourcePath": "sprites\\spr_badCrate\\spr_badCrate.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "540455bb-2114-4076-bba2-eb63724ffb6b",
+            "Value": {
+                "id": "2d0defa0-3da8-4168-8219-6267bc2908e9",
+                "resourcePath": "views\\540455bb-2114-4076-bba2-eb63724ffb6b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -419,6 +443,14 @@
             "Value": {
                 "id": "5ce93006-5e00-421d-8dd5-30a6e219beb3",
                 "resourcePath": "sprites\\spr_hopperIdle\\spr_hopperIdle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a2b18141-b97d-4e0f-a238-637be36218b4",
+            "Value": {
+                "id": "64976173-1003-47b2-9183-f869183558b4",
+                "resourcePath": "sprites\\spr_PlayerWalk\\spr_PlayerWalk.yy",
                 "resourceType": "GMSprite"
             }
         },
