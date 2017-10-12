@@ -32,6 +32,7 @@ if(isActive){
 	
 	//This collision system is horrible, but works
 	if (myPos != myLastPos){
+		if (myPos[1] != myLastPos[1]){isOnGround = false;};
 		if (!place_free(myPos[0],myPos[1])){
 		
 			//Initialise the local variables

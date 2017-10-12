@@ -11,7 +11,7 @@ if(!isAttacking && keyboard_check_pressed(vk_space)){
 	myAttack.myAttacker = self;
 	isAttacking = true;
 };
-if (isAttacking){isInvincible = true; myInvincibleTimer = 0;}
+//if (isAttacking){isInvincible = true; myInvincibleTimer = 0;}
 
 if(keyboard_check_released(ord("1"))){testFunction(1);};
 if(keyboard_check_released(ord("2"))){testFunction(2);};
@@ -37,11 +37,15 @@ if (keyboard_check(vk_right) && !keyboard_check(vk_left)){
 if (keyboard_check(ord("D")) && !keyboard_check(ord("A"))){
 	//move the character right
 	isWalkingRight = true;
+	image_xscale = 1;
+	mask_index = spr_PlayerWalk;
 	//myAccel[0] = 2;
 } else isWalkingRight = false;
 if (keyboard_check(ord("A")) && !keyboard_check(ord("D"))){
 	//move the character left
 	isWalkingLeft = true;
+	image_xscale = -1;
+	mask_index = spr_PlayerWalk;
 	//myAccel[0] = -2;
 } else isWalkingLeft = false;
 if (keyboard_check(ord("W")) && !keyboard_check(ord("S"))){
@@ -61,7 +65,7 @@ if (isInvincible){
 		image_alpha = 1;
 		myInvincibleTimer = get_timer();
 	};
-	if((startFrameTime - myInvincibleTimer) > 660000){
+	if((startFrameTime - myInvincibleTimer) > 1000000){
 		isInvincible = false;
 		myInvincibleTimer = 0;
 		image_alpha = 1;
@@ -119,3 +123,5 @@ if(mouse_x == clamp(mouse_x, bbox_left, bbox_right) && mouse_y == clamp(mouse_y,
 	};
 };
 
+
+if(!keyboard_check(vk_anykey) && isOnGround){mask_index = spr_PlayerIdle;};
