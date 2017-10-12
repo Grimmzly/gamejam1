@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "b4df8ea6-9e9a-4792-8056-85ebda0ee266",
+            "Value": {
+                "id": "3cf1d440-dd69-478d-bc71-0bfdece7916d",
+                "resourcePath": "objects\\obj_NetworkHandler\\obj_NetworkHandler.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b6fe571a-df98-49fa-a33a-298bd9840fe2",
             "Value": {
                 "id": "c688b04c-543d-4f76-8b01-46f715fccf70",

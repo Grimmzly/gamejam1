@@ -11,6 +11,11 @@ if (get_timer() - timeFrame > jumpTimer){
 	if (obj_Player.x < x){isWalkingLeft = true; image_xscale = -1;};
 	mask_index = spr_hopperAngry;
 };
+
+//Sets the frame manually
+if(mask_index = spr_hopperAngry && (image_index > image_number - 1)){image_index -= 4};
+
+
 event_inherited();
 isJumping = false;
 isWalkingRight = false;

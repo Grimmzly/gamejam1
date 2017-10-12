@@ -7,7 +7,8 @@ startFrameTime = get_timer();
 event_inherited();
 if(!isAttacking && keyboard_check_pressed(vk_space)){
 	audio_play_sound(Sound_Explosion,1,false);
-	instance_create_depth(myPos[0],myPos[1],depth,obj_Attack);
+	myAttack = instance_create_depth(myPos[0],myPos[1],depth,obj_Attack);
+	myAttack.myAttacker = self;
 	isAttacking = true;
 };
 if (isAttacking){isInvincible = true; myInvincibleTimer = 0;}
