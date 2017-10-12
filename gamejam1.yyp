@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "8b98aae7-79a3-4f32-8253-732d9b4051c1",
+            "Value": {
+                "id": "9b8fea8c-e05d-4b4b-ab4b-4bb315b9c590",
+                "resourcePath": "objects\\obj_NetPlayer\\obj_NetPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8c157901-5835-46ec-8a7a-b326a033e097",
             "Value": {
                 "id": "495b08cf-1ca7-4d33-a680-b90f5dbac4ec",
@@ -556,6 +564,14 @@
                 "id": "b8acb515-d7f1-4ca0-bacd-88f1e7f06ba0",
                 "resourcePath": "scripts\\FUCKYOUSOURCECONTROL\\FUCKYOUSOURCECONTROL.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c62d4dbd-e389-4d84-a064-97068862a87d",
+            "Value": {
+                "id": "527014ff-7560-4d32-9276-0caf4ed84c83",
+                "resourcePath": "sprites\\spr_WhiteGhost\\spr_WhiteGhost.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

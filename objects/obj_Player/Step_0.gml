@@ -10,7 +10,7 @@ if(!isAttacking && keyboard_check_pressed(vk_space)){
 	instance_create_depth(myPos[0],myPos[1],depth,obj_Attack);
 	isAttacking = true;
 };
-if (isAttacking){isInvincible = true;myInvincibleTimer = 0;}
+if (isAttacking){isInvincible = true; myInvincibleTimer = 0;}
 
 if(keyboard_check_released(ord("1"))){testFunction(1);};
 if(keyboard_check_released(ord("2"))){testFunction(2);};
@@ -57,11 +57,15 @@ if (keyboard_check(ord("S")) && !keyboard_check(ord("W"))){
 
 if (isInvincible){
 	if(myInvincibleTimer = 0){
+		image_alpha = 1;
 		myInvincibleTimer = get_timer();
 	};
-	if((startFrameTime - myInvincibleTimer) > 750000){
+	if((startFrameTime - myInvincibleTimer) > 660000){
 		isInvincible = false;
 		myInvincibleTimer = 0;
+		image_alpha = 1;
+	}else if (!isAttacking){
+		image_alpha = sin(get_timer());
 	};
 };
 
