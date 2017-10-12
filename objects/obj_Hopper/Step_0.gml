@@ -15,4 +15,3 @@ event_inherited();
 isJumping = false;
 isWalkingRight = false;
 isWalkingLeft = false;
-/*
