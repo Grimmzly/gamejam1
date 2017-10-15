@@ -2,3 +2,4 @@
 // You can write your code in this editor
 i = get_timer();
 myAttacker = 0;
+myAttacker.isInvincible = true;

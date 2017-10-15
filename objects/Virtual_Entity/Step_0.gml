@@ -4,6 +4,21 @@
 //Before we waste a frame on them, are they already dead?
 if (myHealth <= 0){instance_destroy(self);};
 
+if (isInvincible){
+	if(myInvincibleTimer = 0){
+		image_alpha = 1;
+		myInvincibleTimer = get_timer();
+	};
+	if((startFrameTime - myInvincibleTimer) > 1000000){
+		isInvincible = false;
+		myInvincibleTimer = 0;
+		image_alpha = 1;
+	}else if (!isAttacking){
+		image_alpha = sin(get_timer());
+	};
+};
+
+
 //As long as this Object is active, run the following
 if(isActive){
 	//Update the logic frames per step

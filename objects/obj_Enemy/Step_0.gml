@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(myPos = myLastPos) {isWalkingRight = !isWalkingRight; isWalkingLeft = !isWalkingLeft;};
 event_inherited();
+if(!place_free(myPos[0] + mySpeed[0],myPos[1])) {isWalkingRight = !isWalkingRight; isWalkingLeft = !isWalkingLeft;};

@@ -60,20 +60,6 @@ if (keyboard_check(ord("S")) && !keyboard_check(ord("W"))){
 	//Not used yet
 };
 
-if (isInvincible){
-	if(myInvincibleTimer = 0){
-		image_alpha = 1;
-		myInvincibleTimer = get_timer();
-	};
-	if((startFrameTime - myInvincibleTimer) > 1000000){
-		isInvincible = false;
-		myInvincibleTimer = 0;
-		image_alpha = 1;
-	}else if (!isAttacking){
-		image_alpha = sin(get_timer());
-	};
-};
-
 //If you hit an enemy, react here
 if (place_meeting(myPos[0],myPos[1],obj_badCrate)){mySpeed[1] *= -1; isInvincible = true;}
 
