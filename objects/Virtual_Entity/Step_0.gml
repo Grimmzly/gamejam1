@@ -39,7 +39,7 @@ if(isActive){
 		}else if (place_free(x - hw,y)){
 			push = -10;
 		};
-		mySpeed[1] = myJumpSpeed/2;
+		mySpeed[1] = myJumpSpeed*0.8;
 		mySpeed[0] = push;
 		isWallJumping = false;
 	};
