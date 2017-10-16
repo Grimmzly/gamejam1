@@ -102,6 +102,15 @@ if (keyboard_check(vk_down))
 			while (place_free(x,y + 1)) y++;
 		}
 */
+if(mouse_check_button_pressed(mb_left)) { //Added Statement
+		//(instance_create_depth(x,y,depth,obj_Bullet)).myAttacker = self;
+		newBullet = instance_create_depth(x,y,depth,obj_Bullet);
+		newBullet.myAttacker = self;
+		newBullet.direction = point_direction(self.x,self.y,mouse_x,mouse_y);
+		dd = angle_difference(newBullet.image_angle, newBullet.direction);
+		newBullet.image_angle -= dd + 90;
+}
+
 
 if(mouse_x == clamp(mouse_x, bbox_left, bbox_right) && mouse_y == clamp(mouse_y, bbox_top, bbox_bottom)){
 	if mouse_check_button_pressed(mb_left) {

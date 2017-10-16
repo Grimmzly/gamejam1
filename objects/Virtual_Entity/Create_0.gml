@@ -21,3 +21,4 @@ isWalkingLeft = false;						//Some logic for walking
 isWalkingRight = false;						//""				""
 isInvincible = false;						//This is for modders, and specific sections of code
 isAttacking = false;						//For attacking logic
+myInvincibleTimer = 0						//Because invincibility shouldn't last forever

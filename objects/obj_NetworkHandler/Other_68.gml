@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+/*
 if(task = "join") {
 	type = async_load[? "type"];
 	if(type = network_type_data) {
@@ -48,8 +50,8 @@ if(task = "host") {
 	type = async_load[? "type"];
 	if(type = network_type_connect) { 
 		PlayerSocket = async_load[? "socket"];
-		LocalPlayer = instance_create_layer(32,32,"Instances",obj_player);
-		GlobalPlayer = instance_create_layer(32,32,"Instances",obj_player);
+		LocalPlayer = instance_create_layer(32,32,"Instances",obj_Player);
+		GlobalPlayer = instance_create_layer(32,32,"Instances",obj_NetPlayer);
 	}
 	if(type = network_type_data) {
 		mID = buffer_read(rec_buffer,buffer_u8);
@@ -64,10 +66,7 @@ if(task = "host") {
 				GlobalPlayer.x = buffer_read(rec_buffer,buffer_u16);
 				GlobalPlayer.y = buffer_read(rec_buffer,buffer_u16);
 			break;
-			case 3: //Added Statement
-					bullet = instance_create_layer(GlobalPlayer.x,GlobalPlayer.y,"Instances",obj_bullet);
-					bullet.direction = buffer_read(rec_buffer,buffer_u16);
-				break;
 		}
 	}
 }
+*/
