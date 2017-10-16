@@ -13,58 +13,64 @@ if(!isAttacking && keyboard_check_pressed(vk_space)){
 };
 //if (isAttacking){isInvincible = true; myInvincibleTimer = 0;}
 
-if(keyboard_check_released(ord("1"))){testFunction(1);};
-if(keyboard_check_released(ord("2"))){testFunction(2);};
-if(keyboard_check_released(ord("3"))){testFunction(3);};
-if(keyboard_check_released(ord("4"))){testFunction(4);};
-if(keyboard_check_released(vk_numpad1)){testFunction(1);};
+//if(keyboard_check_released(ord("1"))){testFunction(1);};
+//if(keyboard_check_released(ord("2"))){testFunction(2);};
+//if(keyboard_check_released(ord("3"))){testFunction(3);};
+//if(keyboard_check_released(ord("4"))){testFunction(4);};
+//if(keyboard_check_released(vk_numpad1)){testFunction(1);};
 
 
 
-//This is where the new controls will go
+//This is where we check for keyboard input
 
-
-if (keyboard_check(vk_left) && !keyboard_check(vk_right)){
-	//move the character left
+if (keyboard_check(vk_anykey)){
 	
-};
-if (keyboard_check(vk_right) && !keyboard_check(vk_left)){
-	//move the character right
-	
-};
-
-//Alternate controls for WASD
-if (keyboard_check(ord("D")) && !keyboard_check(ord("A"))){
-	//move the character right
-	isWalkingRight = true;
-	image_xscale = 1;
-	mask_index = spr_PlayerWalk;
-	//myAccel[0] = 2;
-} else isWalkingRight = false;
-if (keyboard_check(ord("A")) && !keyboard_check(ord("D"))){
-	//move the character left
-	isWalkingLeft = true;
-	image_xscale = -1;
-	mask_index = spr_PlayerWalk;
-	//myAccel[0] = -2;
-} else isWalkingLeft = false;
-if (keyboard_check_pressed(ord("W")) && !keyboard_check(ord("S"))){
-	//move the character up
-	isJumping = true;
-	if (place_meeting(x + sprite_width/2,y,obj_Solid) || 
-		place_meeting(x - sprite_width/2,y,obj_Solid) && 
-		!isOnGround){
-		isWallJumping = true;
+	//checking WASD
+	if (keyboard_check(ord("D")) || keyboard_check(ord("A"))){
+		mask_index = spr_PlayerWalk;
+		if (!keyboard_check(ord("A"))){
+			//move the character right
+			isWalkingRight = true;
+			image_xscale = 1;
+		};
+		if (!keyboard_check(ord("D"))){
+			//move the character left
+			isWalkingLeft = true;
+			image_xscale = -1;
+		};
+	};
+	if (keyboard_check(ord("W")) && !keyboard_check(ord("S"))){
+		//move the character up
+		isJumping = true;
+		qw = sprite_get_width(mask_index)/4;
+		if ((place_meeting(x + qw,y,obj_Solid) && keyboard_check(ord("A"))) || 
+			(place_meeting(x - qw,y,obj_Solid) && keyboard_check(ord("D"))) && 
+			!isOnGround){
+			isWallJumping = true;
+		};
+	};
+	if (keyboard_check(ord("S")) && !keyboard_check(ord("W"))){
+		//move the character down
+		//Not used yet
+		ew = ceil(sprite_get_width(mask_index)/8);
+		if (place_meeting(x + ew,y,obj_Solid) || 
+			place_meeting(x - ew,y,obj_Solid) && 
+			!isOnGround){
+			mySpeed[1]=0;
+		};
 	};
 };
-if (keyboard_check_released(ord("W")) && isJumping){
-	isJumping = false;
+if (keyboard_check_released(vk_anykey)){
+	if (keyboard_check_released(ord("W")) && isJumping){
+		isJumping = false;
+	};
+	if (keyboard_check_released(ord("A"))){
+		isWalkingLeft = false;
+	};
+	if (keyboard_check_released(ord("D"))){
+		isWalkingRight = false;
+	};
 };
-if (keyboard_check(ord("S")) && !keyboard_check(ord("W"))){
-	//move the character down
-	//Not used yet
-};
-
 //If you hit an enemy, react here
 if (place_meeting(myPos[0],myPos[1],obj_badCrate)){mySpeed[1] *= -1; isInvincible = true;}
 

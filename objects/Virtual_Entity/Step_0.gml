@@ -29,9 +29,14 @@ if(isActive){
 	if (isOnGround && isJumping) { mySpeed[1] = myJumpSpeed; isOnGround = false;};
 	if (!isOnGround && isWallJumping){
 		push = 0;
-		if (place_free(x+sprite_width/2,y)){
+		if (mask_index){
+			hw = sprite_get_width(mask_index) / 2;
+		}else {
+			hw = sprite_width / 2;
+		};
+		if (place_free(x + hw,y)){
 			push = 10;
-		}else if (place_free(x-sprite_width/2,y)){
+		}else if (place_free(x - hw,y)){
 			push = -10;
 		};
 		mySpeed[1] = myJumpSpeed;
