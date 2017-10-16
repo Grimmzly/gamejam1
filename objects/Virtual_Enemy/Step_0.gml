@@ -6,7 +6,8 @@ if(place_meeting(x,y,obj_Attack)){
 		isInvincible = true;
 	};
 	if (place_meeting(x,y,obj_Bullet)){
-		instance_destroy(obj_Bullet);
+			CollidingObject = instance_place(x,y,obj_Bullet);
+		instance_destroy(CollidingObject);
 	};
 };
 //if(myHealth<=0){instance_destroy();};

@@ -26,7 +26,18 @@ if(isActive){
 	myLastPos[1] = myPos[1];
 
 	//Check to see if you're jumping
-	if ((isOnGround || wallJump) && isJumping) { mySpeed[1] = myJumpSpeed; isOnGround = false;};
+	if (isOnGround && isJumping) { mySpeed[1] = myJumpSpeed; isOnGround = false;};
+	if (!isOnGround && isWallJumping){
+		push = 0;
+		if (place_free(x+sprite_width/2,y)){
+			push = 10;
+		}else if (place_free(x-sprite_width/2,y)){
+			push = -10;
+		};
+		mySpeed[1] = myJumpSpeed;
+		mySpeed[0] = push;
+		isWallJumping = false;
+	};
 
 	//Check to see if you're walking
 	if (isWalkingRight && !isWalkingLeft) {myAccel[0] = 1;};

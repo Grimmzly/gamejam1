@@ -51,8 +51,10 @@ if (keyboard_check(ord("A")) && !keyboard_check(ord("D"))){
 if (keyboard_check(ord("W")) && !keyboard_check(ord("S"))){
 	//move the character up
 	isJumping = true;
-	if (place_meeting(x + sprite_width/2,y,obj_Solid) || place_meeting(x - sprite_width/2,y,obj_Solid) && !isOnGround){
-		wallJump = true;
+	if (place_meeting(x + sprite_width/2,y,obj_Solid) || 
+		place_meeting(x - sprite_width/2,y,obj_Solid) && 
+		!isOnGround){
+		isWallJumping = true;
 	};
 };
 if (keyboard_check_released(ord("W")) && isJumping){
