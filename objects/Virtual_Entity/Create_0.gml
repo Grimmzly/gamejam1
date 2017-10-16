@@ -9,6 +9,7 @@ if(x && y){
 	myPos = [x,y];							//Position - Where it is on the map
 	myLastPos = [x,y];						//Last Position - Where it was last frame
 }else {myPos = [0,0]; myLastPos = [0,0];}	//Just in case they didn't initialise properly
+wallJump = false;
 myJumpSpeed = -20;							//How much force is the jump creating.
 mySpeed = [0,0];							//Speed - How much position changes per frame
 maxSpeed = [20,50];							//Max Speed - The fastest they can go

@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-startFrameTime = get_timer();
 //Before we waste a frame on them, are they already dead?
 if (myHealth <= 0){instance_destroy(self);};
+startFrameTime = get_timer();
 
 if (isInvincible){
 	if(myInvincibleTimer = 0){
@@ -26,7 +26,7 @@ if(isActive){
 	myLastPos[1] = myPos[1];
 
 	//Check to see if you're jumping
-	if (isOnGround && isJumping) { mySpeed[1] = myJumpSpeed; isOnGround = false;};
+	if ((isOnGround || wallJump) && isJumping) { mySpeed[1] = myJumpSpeed; isOnGround = false;};
 
 	//Check to see if you're walking
 	if (isWalkingRight && !isWalkingLeft) {myAccel[0] = 1;};
