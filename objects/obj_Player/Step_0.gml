@@ -28,6 +28,16 @@ if (keyboard_check(vk_anykey)){
 	//checking WASD
 	if (keyboard_check(ord("D")) || keyboard_check(ord("A"))){
 		mask_index = spr_PlayerWalk;
+		if  (!keyboard_check(ord("W"))){
+			//move the character down
+			//Not used yet
+			ew = ceil(sprite_get_width(mask_index)/8);
+			if (place_meeting(x + ew,y,obj_Solid) || 
+				place_meeting(x - ew,y,obj_Solid) && 
+				!isOnGround){
+				mySpeed[1]=0;
+			};
+		};
 		if (!keyboard_check(ord("A"))){
 			//move the character right
 			isWalkingRight = true;
@@ -49,16 +59,16 @@ if (keyboard_check(vk_anykey)){
 			isWallJumping = true;
 		};
 	};
-	if (keyboard_check(ord("S")) && !keyboard_check(ord("W"))){
-		//move the character down
-		//Not used yet
-		ew = ceil(sprite_get_width(mask_index)/8);
-		if (place_meeting(x + ew,y,obj_Solid) || 
-			place_meeting(x - ew,y,obj_Solid) && 
-			!isOnGround){
-			mySpeed[1]=0;
-		};
-	};
+	//if (keyboard_check(ord("S")) && !keyboard_check(ord("W"))){
+	//	//move the character down
+	//	//Not used yet
+	//	ew = ceil(sprite_get_width(mask_index)/8);
+	//	if (place_meeting(x + ew,y,obj_Solid) || 
+	//		place_meeting(x - ew,y,obj_Solid) && 
+	//		!isOnGround){
+	//		mySpeed[1]=0;
+	//	};
+	//};
 };
 if (keyboard_check_released(vk_anykey)){
 	if (keyboard_check_released(ord("W")) && isJumping){
